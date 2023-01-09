@@ -1,4 +1,4 @@
-<h1 align="center">JUnit Form Automation and Junit demoqa test automation</h1>
+## JUnit Form Automation and Junit demoqa test automation
 Here the following tasks are done:
 - Form is automated using Junit utilizing [Automation Practice Form](https://demoqa.com/automation-practice-form)
 - Dynamically sent user inputs
