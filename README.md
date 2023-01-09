@@ -1,11 +1,11 @@
 <h1 align="center">JUnit Form Automation and Junit demoqa test automation</h1>
-#### Here the following tasks are done:
+Here the following tasks are done:
 [1] Form is automated using Junit utilizing [Automation Practice Form](https://demoqa.com/automation-practice-form)
 [2] Dynamically sent user inputs
 [3] Validation is done for radios and checkboxes.
 [4] A new date was inserted and the initial date choice was deleted.
 [5] images were submitted along with the data.
-[6 ]Practice Form automation code can be extracted from this [link](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/PracticeForm/Practice_Form.java).
+[6] Practice Form automation code can be extracted from this [link](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/PracticeForm/Practice_Form.java).
 
 
 Different elements from [Demoqa](https://demoqa.com/) is tested and Automated like **Writing Texts** ,**handling alerts**, **selecting dropdown**,**modal dialogs**,**mouse hover**,**date picker**,**keyboard event**,**action click**,**taking screenshot**,**handling windows**,**uploading and downloading** etc. </br>
