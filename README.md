@@ -6,10 +6,10 @@ The following tasks are completed here:
 - A new date was inserted and the initial date choice was deleted.
 - images were submitted along with the data.
 Practice Form automation code can be extracted from this
-[Link](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/PracticeForm/Practice_Form.java).
+[LINK](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/PracticeForm/Practice_Form.java).
 
 Various components of [Demoqa](https://demoqa.com/) is tested and Automated like **Writing Texts** ,**handling alerts**, **selecting dropdown**,**modal dialogs**,**mouse hover**,**date picker**,**keyboard event**,**action click**,**taking screenshot**,**handling windows**,**uploading and downloading** etc. </br>
-JUnit Automation codes can be extracted from this [link](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/TestAutomation/Test_Automation.java).
+JUnit Automation codes can be extracted from this [LINK](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/TestAutomation/Test_Automation.java).
 
 
 ### **The equipment utilized for this project:** </br>
