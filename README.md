@@ -18,9 +18,9 @@ JUnit Automation codes can be extracted from this [link](https://github.com/Tonm
 - Build tool: Gradle
 - Language: Java
 - Test Runner: Junit
-### Run the Automation Script by the following command:
+### Use the following command to run the automation script:
  ```
  gradle clean test 
  ```
-- **The following report is generated:**
+- **It generates the report shown below.:**
 ![Report](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/gradle/wrapper/report.png)
