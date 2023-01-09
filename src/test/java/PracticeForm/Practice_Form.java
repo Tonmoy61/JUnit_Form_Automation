@@ -1,4 +1,21 @@
 package PracticeForm;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 public class Practice_Form {
    WebDriver driver;
     HashMap<String,String> hashMap=new HashMap<>();
@@ -14,13 +31,13 @@ public class Practice_Form {
     @Test
     public void wholeFormAutomation() throws InterruptedException, IOException, ParseException {
         driver.get("https://demoqa.com/automation-practice-form");
-//    --------------------Header Text Match----------------------
+//    -----Header Text Match----------
         String text= driver.findElement(By.tagName("h5")).getText();
         Assert.assertEquals("Student Registration Form",text);
-//    ------------------------Form Displayed Or Not-------------------
+//   ---------------Form Displayed Or Not-------
         WebElement displayed=driver.findElement(By.id("userForm"));
         Assert.assertTrue(displayed.isDisplayed());
-//        --------------------Writing on Text Box Areas----------------
+//       ----------Writing on Text Box Areas--------
         driver.findElement(By.id("firstName")).sendKeys("Md");
         driver.findElement(By.id("lastName")).sendKeys("Radwan");
         Thread.sleep(500);
@@ -29,7 +46,7 @@ public class Practice_Form {
         driver.findElement(By.id("userNumber")).sendKeys("1749423104");
         Thread.sleep(1500);
         driver.findElement(By.id("currentAddress")).sendKeys("Merul Badda, Dhaka, Bangladesh");
-//    ---------------------------Radio Button Test----------------------
+//    ---------Radio Button Test------------
         WebElement radioButtonFemale=driver.findElement(By.xpath("//label[contains(text(),'Female')]"));
         radioButtonFemale.click();
         //checking if the other radio button gets deselected or not after clicking another radio button.
@@ -39,14 +56,14 @@ public class Practice_Form {
             radioButtonMale.click();
         }
         System.out.println("Female radio button is deselected and Male radio button is selected");
-//        ----------------------Automating Date Picker-------------------
+//       ------------Automating Date Picker---------
         WebElement calendarInput= driver.findElement(By.id("dateOfBirthInput"));
         calendarInput.sendKeys(Keys.CONTROL+"a");
         Thread.sleep(1000);
         calendarInput.sendKeys("10/20/1996");
         Thread.sleep(1000);
         calendarInput.sendKeys(Keys.ENTER);
-//        --------------------Subject Choose--------------
+//       -----------Subject Choose-------
         WebElement subjectChoose= driver.findElement(By.id("subjectsInput"));
         subjectChoose.sendKeys("English");
         Thread.sleep(1000);
@@ -55,7 +72,7 @@ public class Practice_Form {
         subjectChoose.sendKeys("Mathematics");
         Thread.sleep(1000);
         subjectChoose.sendKeys(Keys.ENTER);
-// ----------------- Selecting the Checkbox ----------------
+// ---------- Selecting the Checkbox -------
         WebElement sportsCheckBox= driver.findElement(By.id("hobbies-checkbox-1"));
         Actions action =new Actions(driver);
         //if first checkbox is not selected.
@@ -68,11 +85,11 @@ public class Practice_Form {
         if(sportsCheckBox.isEnabled()){
             action.moveToElement(readingCheckBox).click().perform();
         }
-//    --------------Uploading Pictures----------------
+//--------Uploading Pictures---------
         Thread.sleep(1000);
         WebElement uploadPic= driver.findElement(By.id("uploadPicture"));
         uploadPic.sendKeys("D:\\waist_coat.jpg");
-//      ---------------State and City Dropdown value choose---------------
+//   ------State and City Dropdown value choose---------
         WebElement state= driver.findElement(By.id("react-select-3-input"));
         WebElement city= driver.findElement(By.id("react-select-4-input"));
         //selecting the state as Haryana by writing Ha and enter
@@ -92,14 +109,14 @@ public class Practice_Form {
 //            state.sendKeys(Keys.ENTER);
         action.moveToElement(city).click().keyDown(Keys.ENTER).keyUp(Keys.ENTER).perform();
 
-//        -------------- Clicking Submit Button --------------
+//    --------- Clicking Submit Button -------
         WebElement submitButton= driver.findElement(By.cssSelector("[type=submit]"));
         Thread.sleep(1000);
         //clicking the submit button
         action.moveToElement(submitButton).sendKeys(Keys.ENTER).perform();
         //checking whether submit button is visible or not
 //        Assert.assertTrue(submit.isDisplayed());
-//    -----------------keeping user info into json Array by extracting the info from the table-------------
+//    -------keeping user info into json Array by extracting the info from the table-------
         // checking the table header message
 //        WebElement tableHeaderMsg= driver.findElement(By.className("modal-title h4"));
 //        System.out.println(tableHeaderMsg.getText());
@@ -121,12 +138,7 @@ public class Practice_Form {
 //
 //        }
 
-
     }
-
-
-
-
 
     @After
     public void close() {
