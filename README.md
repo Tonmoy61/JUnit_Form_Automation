@@ -12,7 +12,7 @@ Various components of [Demoqa](https://demoqa.com/) is tested and Automated like
 JUnit Automation codes can be extracted from this [link](https://github.com/Tonmoy61/JUnit_Form_Automation/blob/master/src/test/java/TestAutomation/Test_Automation.java).
 
 
-### **Technology:** </br>
+### **The equipment utilized for this project:** </br>
 - Tool: Selenium
 - IDE: Intellij
 - Build tool: Gradle
